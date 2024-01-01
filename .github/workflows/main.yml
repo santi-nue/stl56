@@ -8,13 +8,15 @@ jobs:
     runs-on: windows-2019
     env:
       CC: i686-w64-mingw32-gcc
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+     
     steps:
     - uses: actions/checkout@v4
       with:
         repository: webui-dev/webui.git
         path: .
         ref: main
-    
+
     - run: echo "::add-path::C:\\msys64\\usr\\bin"
     - run: pacman --version
     - run: pacman -Sy
