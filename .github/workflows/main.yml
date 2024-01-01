@@ -19,6 +19,7 @@ jobs:
       with:
         repository: webui-dev/webui.git
         path: .
+        ref: main
           
        
     - name: build
