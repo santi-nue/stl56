@@ -24,4 +24,5 @@ jobs:
        
     - name: build
       run: |
+            $env:PATH = "C:\msys64\usr\bin;$env:PATH"
             pacman -S mingw-w64-i686-toolchain
