@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        shell: bash    
+    
+    steps:
+
+          
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        repository: webui-dev/webui.git
+        path: main        
+          
+       
+    - name: build
+      run: |
+            pacman -S mingw-w64-i686-toolchain
