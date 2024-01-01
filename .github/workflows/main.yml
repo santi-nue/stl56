@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: webui-dev/webui.git
-        path: main        
+        path: .
           
        
     - name: build
