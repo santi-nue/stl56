@@ -27,6 +27,9 @@ jobs:
     - run: i686-w64-mingw32-gcc --version
       name: 'Display tools version'
     - run: mingw32-make -f GNUmakefile
+    - run: cd .\examples\C\minimal
+    - run: mingw32-make -f GNUmakefile
+    
 
 
 
